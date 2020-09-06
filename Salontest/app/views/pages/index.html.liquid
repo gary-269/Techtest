@@ -1,0 +1,22 @@
+{% content_for 'meta_title' %}SalonTest{% endcontent_for %}
+<html>
+  <head>
+    <style>
+    </style>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ 'scripts/app.js' | asset_url }}"></script>
+  </head>
+  <body >
+    <div class="text-center container-fluid full-height" id="mail">
+    <h1  style="font-size:2vw;" id="heading">Welcome to SalonEverywhere Pre-Appointment COVID Screening Tool!!</h1>
+    <h2 style="font-size:2vw;" id="heading">Please enter your email below:</h2>
+    {% include_form "modules/example/email_form" %}
+  </div>
+       </body>
+</html>
+    
+
+  

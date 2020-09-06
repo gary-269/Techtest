@@ -1,0 +1,17 @@
+
+---
+name: email_form
+resource: User
+email_notifications:
+    - welcome_user
+fields:
+    email:
+--- 
+<div>
+{% form %}
+  <input name="{{ form.fields.email.name}}" value="{{ form.fields.email.value }}" required />
+{% endform %}
+<a href="/symptom"><button>Submit</button></a>
+</div>
+
+

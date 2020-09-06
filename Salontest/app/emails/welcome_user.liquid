@@ -1,0 +1,24 @@
+---
+to: '{{ form.email }}'
+delay: 0
+enabled: true
+trigger_condition: true
+from: no-reply@example.com
+reply_to: no-reply@example.com
+cc:
+bcc:
+subject: 'Welcome in our marketplace!'
+layout_path: mailer
+---
+<h1>Hi</h1>
+
+<p>Kindly click the link below for completing test.</p>
+
+{% parse_json data %}
+{
+  "email": "RgnlMngr.MichaelScott@DunderMifflin.com",
+  "first_name": "Michael"
+}
+{% endparse_json %}
+
+{% graphql notify = 'emails/welcome_user', data: data %}

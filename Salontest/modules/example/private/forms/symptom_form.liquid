@@ -1,0 +1,83 @@
+---
+name: symptom_form
+resource: User
+fields:
+    properties:
+        response:
+--- 
+<div>
+{% form %}
+    <h2>1) Do you have any of the symptoms or signs?</h2>
+    <p>New or worsening cough</p>
+    <input type="radio" name="cough" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="cough" id="cough">
+    <label for="no">No</label><br>
+    <p>Shortness of breath</p>
+    <input type="radio" name="breath" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="breath" id="cough">
+    <label for="no">No</label><br>
+    <p>Sore throat</p>
+    <input type="radio" name="throat" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="throat" id="cough">
+    <label for="no">No</label><br>
+    <p>Runny nose, sneezing or nasal congestion (in absence of underlying reasons for symptoms such as seasonal allergies and post nasal drip</p>
+    <input type="radio" name="nose" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="nose" id="cough">
+    <label for="no">No</label><br>
+    <p>Hoarse voice</p>
+    <input type="radio" name="voice" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="voice" id="cough">
+    <label for="no">No</label><br>
+    <p>Difficulty swallowing</p>
+    <input type="radio" name="swallow" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="swallow" id="cough">
+    <label for="no">No</label><br>
+    <p>New smell or taste disorder(s)</p>
+    <input type="radio" name="smell" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="smell" id="cough">
+    <label for="no">No</label><br>
+    <p>Nausea/vomiting, diarrhea, abdominal pain</p>
+    <input type="radio" name="nausea" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="nausea" id="cough">
+    <label for="no">No</label><br>
+    <p>Unexplained fatigue/malaise</p>
+    <input type="radio" name="fatigue" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="fatigue" id="cough">
+    <label for="no">No</label><br>
+    <p>Chills</p>
+    <input type="radio" name="chills" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="chills" id="cough">
+    <label for="no">No</label><br>
+    <p>Headache</p>
+    <input type="radio"name="headache" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="headache" id="cough">
+    <label for="no">No</label><br>
+    <p>2) Have you travelled outside of Canada or had close contact with anyone that has travelled outside of Canada in the past 14 days?</p>
+    <input type="radio" name="travel" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="travel" id="cough">
+    <label for="no">No</label><br>
+    <p>3) Do you have a fever?</p>
+    <input type="radio" name="fever" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="fever" id="cough">
+    <label for="no">No</label><br>
+    <p>4) Have you had close contact with anyone with respiratory illness or a confirmed or probable case of COVID-19? </p>
+    <input type="radio" name="contact" id="cough">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="contact" id="cough">
+    <label for="no">No</label><br>
+    </div>
+    <button><a href="/success">Submit</a></button>
+{% endform %}
